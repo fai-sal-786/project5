@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+      <meta charset="UTF-8">
+
+      <meta name="viewpoint"  content="width=device-width, initial-scale=1.0">
+
+      <meta http-equiv="X-UA-Compatable" content="ie=edge">
+
+      <title> Navigation Bar </title>
+<style>
+     
+     *{
+           box-sizing: border-box;
+
+           margin: 0px;
+
+           padding: 0px;
+     }
+    body{ 
+          /*   background-color:#e6cbf8;*/
+               background: url('img7.jpg') no-repeat;            
+     }
+    #home{
+        display: flex;
+        flex-direction: colum;
+        justify-content: centre;
+        align-items: centre;
+        padding: 3px 200px;
+        height: 580px;  
+                  
+       
+    }
+  
+  #home::before{
+
+       content= "";
+       position: absolute;
+       background: url('');
+       height: 100%;
+       width: 100%;
+       z-index: -1;
+       opacity: 0.4; 
+ 
+    } 
+
+  #home p{
+
+    text-align: centre;
+   
+    }
+  
+        /* #box{
+        height: 1000px;
+        width: 800px;
+     }*/
+      
+
+    #services{
+     margin: 0px 38px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap-reverse;
+
+    }
+
+   #services .box1{
+             background-color: rgb(331,  240,  250);
+   
+                     border: 3px solid rgb(64, 6, 119);
+ 
+                     padding: 34px   19px;
+
+                     margin:  2px   20px;
+      
+                     border-radius:  23px;
+
+                     width:     270px;
+
+                     height:    450px;
+               
+                     
+
+
+     }
+
+  #services .box1 img{
+         height: 180px;
+         width: 220px;
+         display: flex;
+         
+     } 
+      .box2{
+             background-color: rgb(331,  240,  250);
+   
+                     border: 3px solid rgb(64, 6, 119);
+ 
+                     padding: 34px   19px;
+
+                     margin:  380px   20px;
+      
+                     border-radius:  23px;
+
+                     width:     270px;
+
+                     height:    380px;
+               
+                     
+
+
+     }
+
+   .box2 img{
+         height: 180px;
+         width: 220px;
+         display: flex;
+         
+     } 
+   
+     .navbar{
+
+            background-color: black;
+            border-radius: 30px;
+
+     } 
+ 
+     .navbar ul{
+           overflow: auto;
+     }
+
+     .navbar li{
+
+            float: left;
+            list-style: none;     
+            margin: 13px 20px;
+       /*   padding-bottom: 1px;*/
+
+     }  
+     .navbar li a{
+     
+         /*  display: inline-block;*/
+           padding: 3px 3px;          
+           text-decoration: none;
+           color: white;
+          
+           
+     }
+
+     .navbar li a:hover{
+
+           color: red;
+     }
+
+     .search{
+            
+          float: ;        
+          color: white;
+          padding: 9px 75px;
+          
+     }
+     .navbar input{
+
+          border: 2px solid black;
+          border-radius: 14px;
+          padding: 3px 5px;
+          width: 100px;
+          
+    }
+  
+ #client-section{
+
+    position: relative;
+    background: url('') no-repeat;
+    heigth: 100px;
+    width: 1000px
+    margin-bottom:0px;
+    background-color: rgb(331,  240,  250);
+    }
+ #client-section::before{
+
+       content= "";
+       position: absolute;
+       background: url('');
+       height: 100%;
+       width: 100%;
+       z-index: -1;
+       opacity: 0.4;      
+       
+    }
+
+
+
+   
+  #clients{
+      display: flex;
+      justify-content: centre;
+      align-items: centre; 
+  /*    height: 390px;*/
+  /*    width: 200px; */    
+       
+    }
+   .client-items{
+
+       padding: 44px;
+
+    }
+ #clients img{
+
+    height: 60px;
+    margin: 10px 10px;
+   
+    }
+
+ #contact-section{
+    
+   position: relative;  
+  
+
+    }
+ #contact::before{
+     content= "";
+     position: absolute;
+     background: url ('');
+     height: 100%;
+     width: 100%;
+     z-index: -1;
+     opacity: 0.5;
+    }
+
+ #contact-box{
+     display: flex;
+     justify-content: centre;
+     align-items: centre;
+     margin: 0px 0px;
+     background: url('img19.jpg') no-repeat;
+    }
+
+ #contact-box input,
+ #contact-box textarea{
+     
+   width: 100%;
+   padding: 0.5 rem;
+   border-radius 9px;
+   font-size: 1.1rem;
+
+    }
+ #contact-box form{
+
+    width: 50%;
+    margin: 0px 240px;
+    }
+ #contact-box label{
+
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', Serif;
+
+    }
+
+     .btn{
+      color: white;
+      background-color: grey;
+      border-radius: 20px;
+      margin: 1px 5px;
+      padding: 1px 1px;
+    }
+
+    .btn:hover{
+     
+         background-color: red; 
+    }
+   .h-primary{
+     margin: 70px 10px;
+     font-size: 30px;
+     FONT-WEIGHT: 'Bree Serif', Serif;
+   }
+  .h-secondary{
+     margin: 0px 2px;
+     padding: 2px 382px;
+   }  
+  .h-third{
+     color: black;
+     border: 2px solid red;
+     padding: 10px 10px;
+     background-color: rgb(331,  240,  250);     
+   }
+  .h-four{
+      margin-bottom: 0px 0px;
+      padding: 2px 382px;
+      background-color: rgb(331,   240,    250);
+   }
+
+  .btn1{
+    margin: 0px 5px;
+    color: white;
+    background-color: red;
+    border-radius: 20px;    
+    padding: 12px 12px;
+    
+   }
+  .btn1:hover{
+     
+         background-color: grey; 
+    }
+
+  .h3{
+
+    margin: 2px 18px;
+    padding: 2px 18px;
+    text-align: centre;
+
+
+
+   }  
+  
+
+   .centre{
+
+     text-align: centre;
+     
+
+   }
+   footer{
+   
+     color: white;
+     background-color: black;
+     border: 2px solid pink;    
+     text-align: centre;
+     height: 35px;
+     width: 100%;     
+     margin: 0px 1px;
+     padding: 8px 215px;
+     
+  }
+
+</style>
+
+</head>
+
+<body>
+    <div id="container"> 
+          <nav class="navbar">
+
+            <ul>
+
+               <li><a href="#home">HOME</a></li>
+               <li><a href="#services-container">Services</a></li>
+               <li><a href="#contact us-container">CONTACT US</a></li>
+               <li><a href="#CLIENT-container"> CLIENT</a></li>
+               <li><a href="#ABOUT US"> ABOUT US</a></li>
+              <div class="search">
+               <input type="text" name="search" id="search" placeholdier="search this website">           
+               <button class="btn"> Search Now </button> 
+               <button class="btn"> sign up  </button> 
+               <button class="btn">  join now </button>
+               </div>             
+              
+               
+               
+             </ul>
+          </nav>
+      </div>
+   <section id="home">
+      <h1 class="h-primary centre"> WELCOME TO MYELECTRIC APPLIANCES SHOP</h1>   
+       <p class="centre"> HOME ELECTRIC ACCESSORIES</P>     
+     
+   
+     </section>  
+
+      <section id="services-container"> 
+<h1 class="h-third"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbspCONTACT US: ONLY SERIOUS BUYER  CONTACT ME THIS NO 03213804534</h1>
+    <h1 class="h-secondary centre">OUR SERVICES : </h1>
+     <div id="services">
+          <div class="box1">
+      <h2> Computer</h2>
+
+       <img src='img3.jpg' alt="This is laptop">
+
+      <p id="first"> THIS ERA IS COMPUTER AND USE BY DIFFERENT WAYS: 1 CYBER SECURITY 2 ARTIFICALL INTELLIGENCES 3 CLOUD CLIPPING</p>
+    <h3> RS. 185;000</h3>
+
+    <button class="btn"> ADD TO CART </button>
+    </div>
+
+    <div class="box1">
+     
+      <h2> REFRIGERATOR</h2>
+
+       <img src='img4.jpg' alt="This is refrigerator">
+
+      <p id="second"> refrigerator is most powerfull electronic appliances and safe the many delicious dishes and safe more grocery items</p>
+    <h3> RS 110,000
+ <button class="btn"> ADD TO CART </button>
+    </div>
+
+    <div class="box1">
+     
+      <h2> WASHING MACHINE</h2>
+
+       <img src='img6.jpg' alt="This is washing machine">
+
+      <p id="third"> WASHING MACHINE MAIN HOME APPLIANCES  AND IMPORTANT OF DRESS WASHING PURPOSE AND MANY CLOTHES ARE WASH </p>
+    
+    <h3> RS.85,000 </h3>
+ <button class="btn"> ADD TO CART </button>
+    </div> 
+  
+    
+         <div class="box1"> 
+     
+      <h2> LED TELEVISION</h2>
+
+       <img src='img9.jpg' alt="This is LED TELEVISION">
+
+      <p id="third"> LED TELEVISION IS  MULTI COLOR  PICTURE GENERATE AND SHOW SHOPKEEPER HDMI PICTURE HDMI STAND FOR HIGH DEFINITION MULTICOLOR IMAGE </p>
+      <h3> RS.50,000 </h3>
+ <button class="btn"> ADD TO CART </button>
+    </div> 
+   
+       <div class="box1">
+     
+      <h2> DISPENSER</h2>
+
+       <img src='img12.jpg' alt="This is DISPENSER">
+
+      <p id="third"> DISPENSER IS USING COOLING WATER GLASS PURPOSE YOU FEEL SUMMER SEASON USE DISPENSER COOL WATER GLASS FEEL COMFORT </p>
+    <h3> RS.19,800 </h3>
+ <button class="btn"> ADD TO CART </button>
+    </div>
+
+      <div class="box1">
+     
+      <h2> VACCUME CLEANER</h2>
+
+       <img src='img11.PNG' alt="This is VACCUME CLEANER">
+
+      <p id="third">  VACCUME CLEANER MAIN PRODUCT OF CLEANING PURPOSES OF MANY MANY CARPETS VACCUME CLEANER SUCK THE dust OF CARPET . </p>
+    <h3> RS.39,800</h3>
+ <button class="btn"> ADD TO CART </button>
+    </div>  
+         
+</div>
+ </section>
+<section id="client-section">
+
+<h1 class="h-four"> OUR CLIENTS : </h1>
+
+   <div id="clients">
+
+     <div class=" client-items">
+
+       <img src='img/logo4.png' alt="our client">
+
+    </div>
+     
+  <div id="clients">
+
+     <div class=" client-items">
+
+       <img src='img/logo3.png' alt="our client">
+
+    </div>
+  <div id="clients">
+
+     <div class=" client-items">
+
+       <img src='img/logo7.png' alt="our client">
+
+    </div>
+ <div id="clients">
+
+     <div class=" client-items">
+
+       <img src='img/logo6.png' alt="our client">
+
+    </div>
+ <div id="clients">
+
+     <div class=" client-items">
+
+       <img src='img/logo1.png' alt="our client">
+
+    </div>
+
+</div>    
+          
+     
+</section>
+    <section id="contact us-container">
+
+    <h1 class="h-four"> OUR CONTACT US :</h1>
+
+    <div id="contact-box">
+
+        <form action="no-action">
+     
+      <div class="form-group">     
+       <label for "name"> NAME: </label>
+       <input type="text" name="name" id="name" placeholdier="Enter your NAME"><br>
+      </div>
+      <div class="form-group">  
+       <label for "email"> EMAIL: </label>
+       <input type="email" name="name" id="email" placeholdier="Enter your EMAIL"><br>
+      </div>
+      <div class="form-group">  
+      <label for "phone no"> PHONE NO: </label>
+       <input type="phone no" name="name" id="phone no" placeholdier="Enter your PHONE NO">
+      </div> 
+      <div class="form-group">  
+      <label for "message"> MESSAGE: </label>
+       <textarea    name="message" id="message cols="30" rows="12"> </textarea>
+      </div>
+      <button class="btn1"> SUBMIT NOW </button>
+   </form>
+  </div>
+</section>
+
+
+
+<footer> COPYRIGHT &copy :   WWW.MYELECTRICSHOP.COM    : ALL RIGHT RESERVED 2023! </footer>
+</body>
+
+</html>
